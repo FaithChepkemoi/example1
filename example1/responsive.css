@@ -1,0 +1,13 @@
+p{
+	color: red;
+	font-family: cursive;
+
+}
+@media screen and (width: 360px) {
+	p{
+		color: blue;
+		font-family: fantasy;
+	}
+  
+  }
+  }

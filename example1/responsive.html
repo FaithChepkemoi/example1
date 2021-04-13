@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>responsive portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+p{
+	color: white;
+	text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 50%;
+  
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:grey;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+h2{
+	text-align: center;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: white;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside {
+  float: center;
+  text-align: center;
+  padding: 20px;
+ /* width: 100%*/
+    
+  background-color: blue;
+  height: 350px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+	background-color: black;
+	float: left;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: grey;
+ width: 5px;
+ text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Faithhope Nyolei</h2>
+<img src="images/pic1.jpg" width="360px" class="center">
+<!-- 
+<p>I’m a community lover,loves team work geared towards serving the community,believes in mentorships and enjoys travelling to new places</p> -->
+
+
+<header>
+  <h2>Bio</h2>
+  <p>I’m a community lover,loves team work geared towards serving the community.</p>
+<p>Believes in mentorships and enjoys travelling to new places</p>
+  <p>Born in the year 1999</p>
+</header>
+ <aside>
+  	<!-- <h3>My favourite you tube video</h3> -->
+  	<iframe width="560" height="315" src="https://www.youtube.com/embed/vP4iY1TtS3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  	</aside>
+
+<section>
+	<div>
+   <h1>Hobbies and Skills</h1>
+    <ul>
+    	<caption>Hobbies</caption>
+    	<li>Travelling</li>
+			<li>Reading</li>
+			<li>playing computer games</li>
+    </ul>
+</div>
+<div>
+    <ol>
+    	<caption>Skills</caption>
+    	<li>netwotk administration</li>
+			<li>hardware Maintenance</li>
+			<li>sales and marketting</li>
+			<li>leadership</li>
+    </ol>
+    </div>
+</section>
+  
+ 
+
+<footer>
+ <nav>
+    <ul>
+      <li><a href="Home">Home</a></li>
+      <li><a href="Contact">Contact</a></li>
+     
+    </ul>
+  </nav>
+  </footer>
+</body>
+</html>
+
+
+
+
